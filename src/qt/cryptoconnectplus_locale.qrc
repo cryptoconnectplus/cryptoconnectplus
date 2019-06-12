@@ -1,0 +1,21 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/cryptoconnectplus_bg.qm</file>
+        <file alias="de">locale/cryptoconnectplus_de.qm</file>
+        <file alias="en">locale/cryptoconnectplus_en.qm</file>
+        <file alias="es">locale/cryptoconnectplus_es.qm</file>
+        <file alias="fi">locale/cryptoconnectplus_fi.qm</file>
+        <file alias="fr">locale/cryptoconnectplus_fr.qm</file>
+        <file alias="it">locale/cryptoconnectplus_it.qm</file>
+        <file alias="ja">locale/cryptoconnectplus_ja.qm</file>
+        <file alias="nl">locale/cryptoconnectplus_nl.qm</file>
+        <file alias="pl">locale/cryptoconnectplus_pl.qm</file>
+        <file alias="pt">locale/cryptoconnectplus_pt.qm</file>
+        <file alias="ru">locale/cryptoconnectplus_ru.qm</file>
+        <file alias="sk">locale/cryptoconnectplus_sk.qm</file>
+        <file alias="sv">locale/cryptoconnectplus_sv.qm</file>
+        <file alias="vi">locale/cryptoconnectplus_vi.qm</file>
+        <file alias="zh_CN">locale/cryptoconnectplus_zh_CN.qm</file>
+        <file alias="zh_TW">locale/cryptoconnectplus_zh_TW.qm</file>
+    </qresource>
+</RCC>

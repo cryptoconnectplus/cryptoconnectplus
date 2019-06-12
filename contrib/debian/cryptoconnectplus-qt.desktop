@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=CryptoConnectPlus Core
+Comment=CryptoConnectPlus P2P Cryptocurrency
+Comment[de]=Verbinde mit dem CryptoConnectPlus peer-to-peer Netzwerk
+Comment[fr]=CryptoConnectPlus, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=CryptoConnectPlus, eşten eşe kriptografik sanal para birimi
+Exec=cryptoconnectplus-qt %u
+Terminal=false
+Type=Application
+Icon=cryptoconnectplus128
+MimeType=x-scheme-handler/cryptoconnectplus;
+Categories=Office;Finance;

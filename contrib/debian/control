@@ -1,0 +1,70 @@
+Source: cryptoconnectplus
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@cryptoconnectplus.org>
+Uploaders: Holger Schinzel <holger@cryptoconnectplus.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.47),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.47),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.47),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.47),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.47),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.47),
+ libminiupnpc8-dev | libminiupnpc-dev,
+ qt4-qmake, libqt4-dev,
+ qttools5-dev-tools, qttools5-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python,
+ libzmq3-dev
+Standards-Version: 3.9.2
+Homepage: https://www.cryptoconnectplus.org/
+Vcs-Git: git://github.com/cryptoconnectpluspay/cryptoconnectplus.git
+Vcs-Browser: https://github.com/cryptoconnectpluspay/cryptoconnectplus
+
+Package: cryptoconnectplusd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ CryptoConnectPlus is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. CryptoConnectPlus uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. CryptoConnectPlus Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, cryptoconnectplusd, and the CLI tool
+ cryptoconnectplus-cli to interact with the daemon.
+
+Package: cryptoconnectplus-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ CryptoConnectPlus is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. CryptoConnectPlus uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. CryptoConnectPlus Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides CryptoConnectPlus-Qt, a GUI for CryptoConnectPlus based on Qt.
+
+Package: cryptoconnectplus-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ CryptoConnectPlus is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. CryptoConnectPlus uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. CryptoConnectPlus Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides cryptoconnectplus-tx, a command-line transaction creation
+ tool which can be used without a cryptoconnectplus daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

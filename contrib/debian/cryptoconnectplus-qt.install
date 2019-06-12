@@ -1,0 +1,6 @@
+usr/local/bin/cryptoconnectplus-qt usr/bin
+share/pixmaps/cryptoconnectplus32.xpm usr/share/pixmaps
+share/pixmaps/cryptoconnectplus16.xpm usr/share/pixmaps
+share/pixmaps/cryptoconnectplus128.png usr/share/pixmaps
+debian/cryptoconnectplus-qt.desktop usr/share/applications
+debian/cryptoconnectplus-qt.protocol usr/share/kde4/services/

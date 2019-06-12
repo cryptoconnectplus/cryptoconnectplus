@@ -1,0 +1,22 @@
+[Unit]
+Description=CryptoConnectPlus's distributed currency daemon
+After=network.target
+
+[Service]
+User=cryptoconnectpluscore
+Group=cryptoconnectpluscore
+
+Type=forking
+PIDFile=/var/lib/cryptoconnectplusd/cryptoconnectplusd.pid
+ExecStart=/usr/bin/cryptoconnectplusd -daemon -pid=/var/lib/cryptoconnectplusd/cryptoconnectplusd.pid \
+-conf=/etc/cryptoconnectpluscore/cryptoconnectplus.conf -datadir=/var/lib/cryptoconnectplusd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
